@@ -1,0 +1,4 @@
+interest /etc/lsb-release
+interest /etc/issue
+interest /etc/issue.net
+interest /etc/gooroom/adjustments
