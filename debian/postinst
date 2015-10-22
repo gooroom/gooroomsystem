@@ -18,7 +18,6 @@ set -e
 
 case "$1" in
     configure)
-        /etc/gooroom/adjustments/grub-distributor-to-gooroom.execute
         update-rc.d gooroomsystem defaults
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
