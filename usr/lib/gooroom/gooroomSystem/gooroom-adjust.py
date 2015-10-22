@@ -78,6 +78,51 @@ try:
             issuefile.close()
             log("/etc/issue.net overwritten")
 
+    # Perform menu adjustments
+    for filename in os.listdir(adjustment_directory):
+        basename, extension = os.path.splitext(filename)
+        if extension == ".menu":
+            filehandle = open(adjustment_directory + "/" + filename)
+            for line in filehandle:
+                line = line.strip()
+                line_items = line.split()
+                if len(line_items) > 0:
+                    if line_items[0] == "hide":
+                        if len(line_items) == 2:
+                            action, desktop_file = line.split()
+                            if os.path.exists(desktop_file):
+                                os.system("grep -q -F 'NoDisplay=true' %s || echo '\nNoDisplay=true' >> %s" % (desktop_file, desktop_file))
+                                log("%s hidden" % desktop_file)
+                    elif line_items[0] == "categories":
+                        if len(line_items) == 3:
+                            action, desktop_file, categories = line.split()
+                            if os.path.exists(desktop_file):
+                                categories = categories.strip()
+                                os.system("sed -i -e 's/Categories=.*/Categories=%s/g' %s" % (categories, desktop_file))
+                                log("%s re-categorized" % desktop_file)
+                    elif line_items[0] == "exec":
+                        if len(line_items) >= 3:
+                            action, desktop_file, executable = line.split(' ', 2)
+                            if os.path.exists(desktop_file):
+                                executable = executable.strip()
+                                found_exec = False
+                                for desktop_line in fileinput.input(desktop_file, inplace=True):
+                                    if desktop_line.startswith("Exec=") and not found_exec:
+                                        found_exec = True
+                                        desktop_line = "Exec=%s" % executable
+                                    print desktop_line.strip()
+                                log("%s exec changed" % desktop_file)
+                    elif line_items[0] == "rename":
+                        if len(line_items) == 3:
+                            action, desktop_file, names_file = line.split()
+                            names_file = names_file.strip()
+                            if os.path.exists(desktop_file) and os.path.exists(names_file):
+                                # remove all existing names, generic names, comments
+                                os.system("sed -i -e '/^Name/d' -e '/^GenericName/d' -e '/^Comment/d' \"%s\"" % desktop_file)
+                                # add provided ones
+                                os.system("cat \"%s\" >> \"%s\"" % (names_file, desktop_file))
+                                log("%s renamed" % desktop_file)
+            filehandle.close()
 
 except Exception, detail:
     print detail
