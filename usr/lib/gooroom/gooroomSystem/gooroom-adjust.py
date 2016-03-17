@@ -91,7 +91,11 @@ try:
                         if len(line_items) == 2:
                             action, desktop_file = line.split()
                             if os.path.exists(desktop_file):
+                                ## 시작 메뉴에서 보이지 않기
                                 os.system("grep -q -F 'NoDisplay=true' %s || echo '\nNoDisplay=true' >> %s" % (desktop_file, desktop_file))
+                                log("%s hidden" % desktop_file)
+                                ## 기본프로그램 선택에서 보이기 않기
+                                os.system("grep -q -F 'OnlyShowIn=none' %s || echo 'OnlyShowIn=none' >> %s" % (desktop_file, desktop_file))
                                 log("%s hidden" % desktop_file)
                     elif line_items[0] == "categories":
                         if len(line_items) == 3:
