@@ -1,3 +1,17 @@
+gooroomsystem (1.0+grm1) gooroom-1.0; urgency=medium
+
+  [ gooroom ]
+  *  add to adjust the menu desktops at gooroom-adjust.py
+  * move grub-distributor-to-gooroom.execute to debian-system-adjustments
+  * remove grub-distributor-to-gooroom.execute at postinst
+  * 기본프로그램 선택에서 보이는 데스크톱 파일을 OnlyShowIn 옵션으로 처리
+  * add coding:utf-8 in gooroom-adjust.py
+  * Pinning 조절로 커널은 구름 저장소에서만 업데이트
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 13 May 2016 19:48:57 +0900
+
 gooroomsystem (1.0) gooroom-1.0; urgency=medium
 
   * Initial Release
