@@ -1,3 +1,15 @@
 Package: *
-Pin: origin build.gooroom.kr
-Pin-Priority: 700
+Pin: release o=gooroom
+Pin-Priority: 900
+
+Package: *
+Pin: release o=Debian
+Pin-Priority: 500
+
+Package: linux-image*
+Pin: release o=Debian
+Pin-Priority: -10
+
+Package: linux-image*
+Pin: release o=gooroom
+Pin-Priority: 900
