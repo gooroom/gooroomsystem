@@ -7,9 +7,5 @@ Pin: release o=Debian
 Pin-Priority: 500
 
 Package: linux-image*
-Pin: release o=Debian
-Pin-Priority: -10
-
-Package: linux-image*
-Pin: release o=gooroom
+Pin: origin *.gooroom.kr
 Pin-Priority: 900
