@@ -1,3 +1,12 @@
+gooroomsystem (1.0.1+grm1) gooroom-1.0; urgency=medium
+
+  [ jongkyung.woo ]
+  * [2996ff85] apt_preferences을 origin *.gooroom.kr 900으로 지정
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 27 May 2016 12:57:45 +0900
+
 gooroomsystem (1.0+grm1) gooroom-1.0; urgency=medium
 
   [ gooroom ]
