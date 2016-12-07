@@ -6,6 +6,6 @@ Package: *
 Pin: release o=Debian
 Pin-Priority: 500
 
-Package: linux-image*
+Package: linux-image* openssl
 Pin: origin *.gooroom.kr
 Pin-Priority: 900
