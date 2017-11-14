@@ -1,3 +1,12 @@
+gooroomsystem (1.0.3+grm1u1) gooroom-1.0; urgency=medium
+
+  [ jongkyung.woo ]
+  * [bd4f9ce0] Changed all gooroom packages to Pin-priority 900
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Tue, 14 Nov 2017 09:38:53 +0900
+
 gooroomsystem (1.0.2+grm1) gooroom-1.0; urgency=medium
 
   [ jongkyung.woo ]
