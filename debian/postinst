@@ -18,7 +18,7 @@ set -e
 
 case "$1" in
     configure)
-        update-rc.d gooroomsystem defaults
+        update-rc.d gooroomsystem start . 2 3 4 5 . stop . 0 6 . > /dev/null
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
 
