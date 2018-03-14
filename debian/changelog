@@ -1,3 +1,12 @@
+gooroomsystem (1.0.4+grm1u1) gooroom-1.0; urgency=medium
+
+  [ jongkyung.woo ]
+  * [823c4b4e] Modified Origin Info from gooroom to Gooroom
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Wed, 14 Mar 2018 17:55:04 +0900
+
 gooroomsystem (1.0.3+grm1u1) gooroom-1.0; urgency=medium
 
   [ jongkyung.woo ]
