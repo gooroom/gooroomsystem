@@ -1,3 +1,12 @@
+gooroomsystem (1.1.0+grm1u1) gooroom-1.0; urgency=medium
+
+  [ jongkyung.woo ]
+  * [7ecb2619] Updated gooroom-adjust.py
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Thu, 11 Oct 2018 11:19:53 +0900
+
 gooroomsystem (1.0.4+grm1u1) gooroom-1.0; urgency=medium
 
   [ jongkyung.woo ]
