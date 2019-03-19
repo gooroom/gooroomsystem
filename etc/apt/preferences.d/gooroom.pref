@@ -2,6 +2,10 @@ Package: *
 Pin: release o=Gooroom
 Pin-Priority: 900
 
+Package: linux-libc-dev
+Pin: release o=Gooroom
+Pin-Priority: 500
+
 Package: *
 Pin: release o=Debian
 Pin-Priority: 500
