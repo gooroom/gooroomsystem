@@ -111,7 +111,7 @@ class GooroomSystem():
             adjustment_directory = "/etc/gooroom/adjustments/"
 
             # Perform file execution adjustments
-            for filename in os.listdir(adjustment_directory):
+            for filename in sorted(os.listdir(adjustment_directory)):
                 basename, extension = os.path.splitext(filename)
                 if extension == ".execute":
                     full_path = os.path.join(adjustment_directory, filename)
@@ -121,7 +121,7 @@ class GooroomSystem():
             # Perform file overwriting adjustments
             array_preserves = []
             if os.path.exists(adjustment_directory):
-                for filename in os.listdir(adjustment_directory):
+                for filename in sorted(os.listdir(adjustment_directory)):
                     basename, extension = os.path.splitext(filename)
                     if extension == ".preserve":
                         filehandle = open(os.path.join(adjustment_directory, filename))
@@ -158,7 +158,7 @@ class GooroomSystem():
                             self.replace_file(source, matching_destination)
 
             # Perform menu adjustments
-            for filename in os.listdir(adjustment_directory):
+            for filename in sorted(os.listdir(adjustment_directory)):
                 basename, extension = os.path.splitext(filename)
                 if extension == ".menu":
                     filehandle = open(os.path.join(adjustment_directory, filename))
