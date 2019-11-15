@@ -9,7 +9,7 @@ import filecmp
 import configparser
 import glob
 
-TIMESTAMPS = "/var/log/gooromsystem.timestamps"
+TIMESTAMPS = "/var/log/gooroomsystem.timestamps"
 
 
 class GooroomSystem():

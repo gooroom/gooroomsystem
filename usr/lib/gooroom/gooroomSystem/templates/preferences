@@ -1,11 +1,15 @@
 Package: *
-Pin: release o=gooroom
-Pin-Priority: 700
+Pin: release o=Gooroom
+Pin-Priority: 900
 
-Package: *
-Pin: origin packages.gooroom.kr
-Pin-Priority: 700
+Package: linux-libc-dev
+Pin: release o=Gooroom
+Pin-Priority: 500
 
 Package: *
 Pin: release o=Debian
 Pin-Priority: 500
+
+Package: *
+Pin: origin *.gooroom.kr
+Pin-Priority: 900

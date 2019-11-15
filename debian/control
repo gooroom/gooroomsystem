@@ -2,10 +2,16 @@ Source: gooroomsystem
 Section: admin
 Priority: optional
 Maintainer: gooroom <gooroom@gooroom.kr>
-Build-Depends: debhelper (>= 5)
-Standards-Version: 3.7.2
+XSBC-Original-Maintainer: Clement Lefebvre <clem@linuxmint.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://www.gooroom.kr
+Vcs-Git: https://github.com/gooroom/gooroomsystem.git
+Vcs-Browser: https://github.com/gooroom/gooroomsystem
 
 Package: gooroomsystem
 Architecture: all
 Depends: aptitude, gooroom-info
-Description: Gooroom OS System Base Package
+Description: Gooroom Platform System Base Package
+ Used by the desktop and other gooroom tools to gather
+ information and process common system tasks.
