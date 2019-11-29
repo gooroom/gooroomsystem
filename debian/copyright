@@ -7,6 +7,7 @@ Source: https://github.com/gooroom/gooroomsystem
 Files: *
 Copyright: 2015-2019 gooroom <gooroom@gooroom.kr>
 Copyright: 2008-2014 Clement Lefebvre <root@linuxmint.com>
+
 License: GPL-2.0+
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
