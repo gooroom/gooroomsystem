@@ -1,3 +1,14 @@
+gooroomsystem (1.1.2+grm2u1) gooroom-1.0; urgency=medium
+
+  [ jongkyung.woo ]
+  * [57e9c17d] Added sort to listdir
+  * [00e530ac] Modified for gooroom-2.0 Version
+  * [06a3300d] Updated copyright
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Sun, 01 Dec 2019 19:46:01 +0900
+
 gooroomsystem (1.1.1+grm1u1) gooroom-1.0; urgency=medium
 
   [ jongkyung.woo ]
