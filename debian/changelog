@@ -1,73 +1,7 @@
-gooroomsystem (1.1.1+grm1u1) gooroom-1.0; urgency=medium
-
-  [ jongkyung.woo ]
-  * [96773189] Adjusted linux-libc-dev's Pin-Priority
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 29 Mar 2019 09:10:24 +0900
-
-gooroomsystem (1.1.0+grm1u1) gooroom-1.0; urgency=medium
-
-  [ jongkyung.woo ]
-  * [7ecb2619] Updated gooroom-adjust.py
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Thu, 11 Oct 2018 11:19:53 +0900
-
-gooroomsystem (1.0.4+grm1u1) gooroom-1.0; urgency=medium
-
-  [ jongkyung.woo ]
-  * [823c4b4e] Modified Origin Info from gooroom to Gooroom
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Wed, 14 Mar 2018 17:55:04 +0900
-
-gooroomsystem (1.0.3+grm1u1) gooroom-1.0; urgency=medium
-
-  [ jongkyung.woo ]
-  * [bd4f9ce0] Changed all gooroom packages to Pin-priority 900
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Tue, 14 Nov 2017 09:38:53 +0900
-
-gooroomsystem (1.0.2+grm1) gooroom-1.0; urgency=medium
-
-  [ jongkyung.woo ]
-  * [a980c01a] set openssl to Pin-Priority 900
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Wed, 07 Dec 2016 16:00:22 +0900
-
-gooroomsystem (1.0.1+grm1) gooroom-1.0; urgency=medium
-
-  [ jongkyung.woo ]
-  * [2996ff85] apt_preferences을 origin *.gooroom.kr 900으로 지정
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 27 May 2016 12:57:45 +0900
-
-gooroomsystem (1.0+grm1) gooroom-1.0; urgency=medium
-
-  [ gooroom ]
-  *  add to adjust the menu desktops at gooroom-adjust.py
-  * move grub-distributor-to-gooroom.execute to debian-system-adjustments
-  * remove grub-distributor-to-gooroom.execute at postinst
-  * 기본프로그램 선택에서 보이는 데스크톱 파일을 OnlyShowIn 옵션으로 처리
-  * add coding:utf-8 in gooroom-adjust.py
-  * Pinning 조절로 커널은 구름 저장소에서만 업데이트
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 13 May 2016 19:48:57 +0900
-
-gooroomsystem (1.0) gooroom-1.0; urgency=medium
+gooroomsystem (1.1.2+grm2u1) unstable; urgency=medium
 
   * Initial Release
 
- -- gooroom <gooroom@gooroom.kr>  Fri, 16 Oct 2015 20:19:32 +0900
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Sun, 01 Dec 2019 19:46:01 +0900
