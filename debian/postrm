@@ -18,7 +18,12 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-		update-rc.d -f gooroomsystem remove
+        update-rc.d -f gooroomsystem remove
+        if which systemctl >/dev/null 2>&1
+        then
+            systemctl stop gooroomsystem.service || true
+            systemctl disable gooroomsystem.service || true
+        fi
         ;;
     failed-upgrade)
         ;;

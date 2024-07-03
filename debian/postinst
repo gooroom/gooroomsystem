@@ -18,7 +18,14 @@ set -e
 
 case "$1" in
     configure)
-        update-rc.d gooroomsystem start . 2 3 4 5 . stop . 0 6 . > /dev/null
+#        update-rc.d gooroomsystem start . 2 3 4 5 . stop . 0 6 . > /dev/null
+        if which systemctl >/dev/null 2>&1
+        then
+            systemctl daemon-reload || true
+            systemctl reenable gooroomsystem.service || true
+        fi
+#        /usr/lib/gooroom/gooroomSystem/gooroom-adjust.py
+
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
 
