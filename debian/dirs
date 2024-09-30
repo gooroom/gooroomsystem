@@ -1,2 +1,3 @@
 usr/lib/gooroom
 usr/lib/gooroom/gooroomSystem
+usr/lib/systemd/system
