@@ -1,3 +1,10 @@
+gooroomsystem (4.1.0+grm4u1) unstable; urgency=medium
+
+  [ cjheo ]
+  * [f45edd8b] systemd 서비스 추가
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Tue, 05 Nov 2024 17:45:11 +0900
+
 gooroomsystem (4.0.0+grm4u1) unstable; urgency=medium
 
   [ jongkyung.woo ]
